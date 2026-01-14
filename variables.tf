@@ -27,3 +27,11 @@ variable "aws_instance_region" {
   type        = string
   default     = "us-east-2"
 }
+
+variable "aws_access_key" {
+  description = "AWS Access Key ID"
+}
+
+variable "aws_secret_key" {
+  description = "AWS Secret Access Key"
+}
