@@ -2,7 +2,7 @@
 #Test
 Terraform module to provision a single EC2 instance.
 Designed for Instruqt Custom Sandbox Resources.
-
+Test
 ## Usage
 
 ```hcl
