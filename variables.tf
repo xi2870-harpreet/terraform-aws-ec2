@@ -1,21 +1,29 @@
 variable "instance_name" {
-  description = "Name tag for the EC2 instance"
+  description = "Name of the EC2 instance"
   type        = string
+  default     = "instruqt-ec2-default"  # New default for robustness
 }
 
-variable "ami" {
-  description = "AMI ID for EC2"
+variable "aws_instance_ami" {
+  description = "ID of the EC2 AMI"
   type        = string
+  default     = "ami-0e83be366243f524a"
 }
 
-variable "instance_type" {
-  description = "EC2 instance type"
+variable "aws_instance_size" {
+  description = "Size of the EC2 instance"
   type        = string
   default     = "t2.micro"
 }
 
-variable "key_name" {
-  description = "EC2 key pair name"
+variable "aws_instance_key" {
+  description = "Name of the EC2 key pair"
   type        = string
-  default     = null
+  default     = "instruqt"
+}
+
+variable "aws_instance_region" {
+  description = "AWS region for the EC2 instance"
+  type        = string
+  default     = "us-east-2"
 }
