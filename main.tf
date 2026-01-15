@@ -1,7 +1,7 @@
 resource "aws_instance" "this" {
-  ami           = var.ami
-  instance_type = var.instance_type
-  key_name      = var.key_name
+  ami           = var.aws_instance_ami
+  instance_type = aws_instance_size
+  key_name      = var.aws_instance_key
 
   tags = {
     Name = var.instance_name
